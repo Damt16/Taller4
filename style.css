@@ -1,52 +1,60 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #fafafa;
+    background: #f8f8f8;
     color: #333;
     line-height: 1.6;
+    padding: 20px;
 }
 
+/* Encabezado */
 h1 {
     text-align: center;
-    font-size: 2rem;
+    color: #fff;
+    background: #d32f2f;  /* Rojo vivo */
+    padding: 20px;
+    border-radius: 8px;
     margin-bottom: 30px;
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 10px;
 }
 
+/* Paneles */
 .panel {
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    max-width: 700px;
+    padding: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .panel:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
-    margin-top: 0;
-    font-size: 1.3rem;
-    color: #c0392b;
-}
-
-h2 a {
+/* Enlaces */
+.panel a {
     text-decoration: none;
-    color: #c0392b;
+    color: inherit;
+    display: block;
 }
 
-h2 a:hover {
-    text-decoration: underline;
+/* Títulos dentro de panel */
+.panel h2 {
+    font-size: 1.5rem;
+    color: #d32f2f;
+    margin-bottom: 8px;
 }
 
-p {
-    margin-top: 8px;
-    color: #555;
+/* Texto dentro de panel */
+.panel p {
     font-size: 1rem;
+    color: #555;
 }
